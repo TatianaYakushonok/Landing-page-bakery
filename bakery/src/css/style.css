@@ -48,6 +48,7 @@ nav {
 .about {
     position: relative;
     height: 640px;
+    margin-bottom: 20px;
     background: url('../img/01-Картинка-фона.jpg') center/cover no-repeat;
 }
 
@@ -76,4 +77,16 @@ nav {
 
 .about__text {
     font-size: 12px;
+}
+
+.description__container {
+    text-align: center;
+}
+
+.description__container img {
+    margin-right: 78px;
+}
+
+.description__container img:last-child {
+    margin-right: 0;
 }
