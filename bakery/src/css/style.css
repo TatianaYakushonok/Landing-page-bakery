@@ -1,17 +1,16 @@
+@import url('./normalize.css');
+@import url('./reset.css');
+
 * {
     box-sizing: border-box;
 }
 
 body {
+    text-align: center;
     background-color: #ffe2b0;
 }
 
-header {
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-h1, p {
+h1, h2, p {
     margin: 0;
 }
 
@@ -41,9 +40,18 @@ a:hover {
     color: red;
 }
 
+/* ======================= HEADER ================================= */
+
+header {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 nav {
     margin-bottom: 20px;
 }
+
+/* ======================= ABOUT ================================= */
 
 .about {
     position: relative;
@@ -59,6 +67,7 @@ nav {
     top: 54%;
     left: 50%;
     padding-top: 15px;
+    text-align: left;
     background: linear-gradient(180deg, rgba(244, 213, 178, .8) 0%, rgba(234, 156, 65, .8) 100%);
 }
 
@@ -79,14 +88,61 @@ nav {
     font-size: 12px;
 }
 
-.description__container {
+/* ======================= DESCRIPTION ================================= */
+
+.description {
+    margin-bottom: 20px;
     text-align: center;
 }
 
-.description__container img {
+.description__container--img {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.description__container--img img {
     margin-right: 78px;
 }
 
-.description__container img:last-child {
+.description__container--img img:last-child {
     margin-right: 0;
+}
+
+.description__title {
+    font-size: 96px;
+}
+
+.red {
+    color: #f15b40;
+}
+
+.description__text {
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+/* ======================= MAP ================================= */
+
+.map {
+    margin-bottom: 20px;
+}
+
+.map__title {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 36px;
+}
+
+/* ======================= FOOTER ================================= */
+
+footer {
+    height: 80px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #999;
+    width: 1024px;
+    margin: 0 auto 20px;
 }
